@@ -1,0 +1,78 @@
+@font-face {
+    font-family: Nanum-Gothic;
+    src: url(./fonts/NanumGothic-Regular.ttf);
+}
+
+@font-face {
+    font-family: Nanum-Gothic-Bold;
+    src: url(./fonts/NanumGothic-Bold.ttf);
+}
+
+body {
+    background-color: #EFECEB;
+    font-family: Nanum-Gothic;
+}
+
+header {
+    margin: 0 50px;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: 4rem;
+    list-style-type: none;
+    align-items: center;
+}
+
+.name {
+    color: rgb(208, 127, 20);
+    font-family: Nanum-Gothic-Bold;
+}
+
+.contact_btn {
+    background-color: rgb(208, 127, 20);
+    border: 1px solid rgb(208, 127, 20);
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 15px;
+    color: white;
+    height: 40px;
+    width: 100px;
+}
+
+.banner {
+    display: grid;
+    grid-template-areas: "heading image"
+                         "subheading image";
+    margin: 50px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.banner_heading {
+    grid-area: heading;
+    font-size: 64px;
+}
+
+.banner_subheading {
+    grid-area: subheading;
+}
+
+.banner_image {
+    grid-area: image;
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+    justify-self: center;
+}
