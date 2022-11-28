@@ -11,11 +11,18 @@
 body {
     background-color: #EFECEB;
     font-family: Nanum-Gothic;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     margin: 0 50px;
     font-size: 20px;
+    position: sticky;
+    top: 0px;
+    background-color: #EFECEB;
+    margin: 0;
+    padding: 10px 70px;
 }
 
 h2 {
@@ -55,7 +62,7 @@ h2 {
     display: grid;
     grid-template-areas: "heading image"
                          "subheading image";
-    margin: 50px;
+    margin: 80px;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
