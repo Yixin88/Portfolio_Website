@@ -49,3 +49,9 @@ newProjectCard("Cat Adoption Website",
                 "First website project, designing a dynamic website for cat adoption center, with key learning in site structuring and element position.", 
                 "https://yixin88.github.io/First_website/", 
                 "https://github.com/Yixin88/First_website"); 
+
+newProjectCard("Word Smith", 
+                "word_smith", 
+                "A simple application which allows tranforming the input text/paragraph to a different style, e.g. Bold, Underline, Italic, Colour Change.", 
+                "https://yixin88.github.io/wordSmith/", 
+                "https://github.com/Yixin88/wordSmith"); 
