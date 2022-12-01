@@ -31,3 +31,21 @@ newProjectCard("Currency Exchange",
                 "A web application that fetch latest currency exchange rate via API depending on the 2 currency you wish to exchange between.", 
                 "https://yixin88.github.io/Currency-Exchange-App/", 
                 "https://github.com/Yixin88/Currency-Exchange-App");
+
+newProjectCard("Calculator", 
+                "calculator", 
+                "A simple calculator project. First ever project build using javascript, core understanding of the logic and DOM manipulation.", 
+                "https://yixin88.github.io/Calculator/", 
+                "https://github.com/Yixin88/Calculator");
+
+newProjectCard("Sign Up Form", 
+                "sign_up_form", 
+                "First solo form project, part of The Odin Project curriculum, with the use of form validation and password matching validation.", 
+                "https://yixin88.github.io/Sign-up-Form/", 
+                "https://github.com/Yixin88/Sign-up-Form"); 
+
+newProjectCard("Cat Adoption Website", 
+                "first_website", 
+                "First website project, designing a dynamic website for cat adoption center, with key learning in site structuring and element position.", 
+                "https://yixin88.github.io/First_website/", 
+                "https://github.com/Yixin88/First_website"); 
