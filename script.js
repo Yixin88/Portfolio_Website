@@ -14,6 +14,12 @@ const newProjectCard = (projectTitle, imageName, description, projectLink, codeL
     projectContainer.appendChild(container);
 }
 
+newProjectCard("Online Ecommerce_Store", 
+                "online-shop", 
+                "A full mock up online E-Commerce store build using JS, mimicing certain element from Amazon. From Sign-in page to full inventory fetching by category/search via mockup API", 
+                "https://yixin88.github.io/E-Commerce_Store/", 
+                "https://github.com/Yixin88/E-Commerce_Store");
+
 newProjectCard("The Bean Machine", 
                 "coffee_landing_page", 
                 "Coffee shop landing page including selction page, with the use of both flexbox and grid. Also animations and pseudo classes.", 
