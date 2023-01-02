@@ -14,7 +14,7 @@ const newProjectCard = (projectTitle, imageName, description, projectLink, codeL
     projectContainer.appendChild(container);
 }
 
-newProjectCard("Online Ecommerce_Store", 
+newProjectCard("Online Ecommerce Store", 
                 "online-shop", 
                 "A full mock up online E-Commerce store build using JS, mimicing certain element from Amazon. From Sign-in page to full inventory fetching by category/search via mockup API", 
                 "https://yixin88.github.io/E-Commerce_Store/", 
