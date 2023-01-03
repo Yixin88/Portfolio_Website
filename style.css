@@ -186,6 +186,7 @@ footer {
     background-color: hsl(34, 82%, 45%);
     border: 1px solid hsl(34, 82%, 45%);
     transition: all .2s ease-in;
+    cursor: pointer;
 }
 
 .project_btns {
