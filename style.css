@@ -71,12 +71,18 @@ p {
 
 #contact_btn {
     background-color: hsl(34, 82%, 45%);
-    border: 1px solid hsl(34, 82%, 45%);
+    border: solid hsl(34, 82%, 45%);
     font-family: inherit;
     font-size: inherit;
     border-radius: 15px;
     color: white;
     padding: 10px 15px;
+}
+
+#contact_btn:hover {
+    transition: 200ms ease-in-out;
+    background-color: hsl(34, 79%, 51%);
+    border: solid hsl(34, 79%, 51%);
 }
 
 .banner {

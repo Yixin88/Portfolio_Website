@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Contact Me</title>
 </head>
 <body>
-    <form action="https://formsubmit.co/yixin88@hotmail.co.uk" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="hidden" name="_next" value="https://yourdomain.co/thankYou.html">
-        <input type="text" placeholder="Your Message" required>
-        <button type="submit">Send</button>
-   </form>
+    <header>
+        <nav class="header_nav">
+            <div>
+                <span class="name">Yixin Zhang</span>
+            </div>
+            <ul>
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./index.html">Project</a></li>
+                <li><a href="./contact.html" id="contact_btn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="https://formsubmit.co/yixin88@hotmail.co.uk" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="hidden" name="_next" value="https://yourdomain.co/thankYou.html">
+            <input type="text" placeholder="Your Message" required>
+            <button type="submit">Send</button>
+       </form>
+    </main>
+    
 </body>
 </html>
