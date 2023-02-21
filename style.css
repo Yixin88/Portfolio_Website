@@ -69,7 +69,7 @@ p {
     font-family: Nanum-Gothic-Bold;
 }
 
-#contact_btn {
+#contact_btn, #sendBtn {
     background-color: hsl(34, 82%, 45%);
     border: solid hsl(34, 82%, 45%);
     font-family: inherit;
@@ -77,9 +77,10 @@ p {
     border-radius: 15px;
     color: white;
     padding: 10px 15px;
+    cursor: pointer;
 }
 
-#contact_btn:hover {
+#contact_btn:hover, #sendBtn:hover {
     transition: 200ms ease-in-out;
     background-color: hsl(34, 79%, 51%);
     border: solid hsl(34, 79%, 51%);
@@ -215,4 +216,25 @@ footer {
 
 .description {
     min-height: 4.5rem;
+}
+
+.contactForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactForm > input, .contactForm > textarea {
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border: solid white;
+    width: 50%;
+    font: inherit;
+}
+
+#message {
+    height: 500px;
 }

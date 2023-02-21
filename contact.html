@@ -21,12 +21,13 @@
         </nav>
     </header>
     <main>
-        <form action="https://formsubmit.co/yixin88@hotmail.co.uk" method="POST">
+        <form action="https://formsubmit.co/yixin88@hotmail.co.uk" method="POST" class="contactForm">
+            <input type="hidden" name="_subject" value="New Portfolio Email!">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <input type="hidden" name="_next" value="https://yourdomain.co/thankYou.html">
-            <input type="text" placeholder="Your Message" required>
-            <button type="submit">Send</button>
+            <textarea name="message" id="message" type="text" placeholder="Your Message" required></textarea>
+            <button id="sendBtn" type="submit">Send</button>
        </form>
     </main>
     
