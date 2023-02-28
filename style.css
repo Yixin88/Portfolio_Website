@@ -69,7 +69,7 @@ p {
     font-family: Nanum-Gothic-Bold;
 }
 
-#contact_btn, #sendBtn {
+#contact_btn, #sendBtn, .returnBtn {
     background-color: hsl(34, 82%, 45%);
     border: solid hsl(34, 82%, 45%);
     font-family: inherit;
@@ -80,7 +80,7 @@ p {
     cursor: pointer;
 }
 
-#contact_btn:hover, #sendBtn:hover {
+#contact_btn:hover, #sendBtn:hover, .returnBtn:hover {
     transition: 200ms ease-in-out;
     background-color: hsl(34, 79%, 51%);
     border: solid hsl(34, 79%, 51%);
@@ -144,10 +144,6 @@ footer {
     filter: invert(100);
     margin: 0 10px;
 }
-
-/* .copyright {
-    display: none;
-} */
 
 .project {
     display: grid;
@@ -237,4 +233,28 @@ footer {
 
 #message {
     height: 500px;
+}
+
+.thankYouContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thankYouContainer > div {
+    width: 150px;
+}
+
+.sendSymbol {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.returnBtn {
+    text-decoration: none;
 }
