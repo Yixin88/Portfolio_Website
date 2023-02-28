@@ -231,6 +231,10 @@ footer {
     font: inherit;
 }
 
+.contactForm > input:hover, .contactForm > textarea:hover {
+    border: solid hsl(34, 82%, 45%);
+}
+
 #message {
     height: 500px;
 }
@@ -250,11 +254,55 @@ footer {
     width: 150px;
 }
 
-.sendSymbol {
+.sendSymbol, .contactPlatformImgContainer img {
     max-width: 100%;
     object-fit: contain;
 }
 
 .returnBtn {
     text-decoration: none;
+}
+
+.contactMainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactMainContainer > div {
+    align-self: center;
+    gap: 20px;
+}
+
+.contactMainContainer > h2 {
+    margin-top: 50px;
+    align-self: center;
+    color: hsl(34, 82%, 45%);
+    font-size: 45px;
+}
+
+.contactMainContainer > hr{
+    width: 80%;
+    background-color: rgb(214, 214, 214);
+    margin-top: 30px;
+}
+
+.contactPlatformImgContainer {
+    width: 200px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.contactLinkContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contactLinkWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInnerText {
+    align-self: center;
 }
