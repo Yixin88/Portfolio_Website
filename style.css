@@ -13,6 +13,16 @@ body {
     font-family: Nanum-Gothic;
     margin: 0;
     padding: 0;
+}
+
+body main {
+    background-color: #EFECEB;
+    font-family: Nanum-Gothic;
+    margin: 0;
+    padding: 0;
+}
+
+body main, body footer {
     animation: fadein 2s;
 }
 
