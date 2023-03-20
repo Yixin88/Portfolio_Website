@@ -67,3 +67,7 @@ newProjectCard("Word Smith",
 //setting smooth scrolling on project section                
 const navHeight = document.querySelector(".big-nav").offsetHeight;
 document.documentElement.style.setProperty('--scroll-padding', navHeight + 20 + "px")
+
+//setting dynamic year on index page
+const year = new Date().getFullYear()
+document.getElementById('year').innerText = year;
