@@ -8,8 +8,8 @@ const newProjectCard = (projectTitle, imageName, description, projectLink, codeL
                            <h3>${projectTitle}</h3>
                            <p class="description">${description}</p>
                            <div class="project_btns">
-                                <a href="${projectLink}"><button class="view_btn">View project</button></a>
-                                <a href="${codeLink}"><button class="view_btn">Source Code</button></a>
+                                <a target="_blank" href="${projectLink}"><button class="view_btn">View project</button></a>
+                                <a target="_blank" href="${codeLink}"><button class="view_btn">Source Code</button></a>
                            </div>`;
     projectContainer.appendChild(container);
 }
