@@ -8,6 +8,11 @@
     src: url(./fonts/NanumGothic-Bold.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding);
+}
+
 body {
     background-color: #EFECEB;
     font-family: Nanum-Gothic;

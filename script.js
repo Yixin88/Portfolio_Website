@@ -61,3 +61,9 @@ newProjectCard("Word Smith",
                 "A simple application which allows tranforming the input text/paragraph to a different style, e.g. Bold, Underline, Italic, Colour Change.", 
                 "https://yixin88.github.io/wordSmith/", 
                 "https://github.com/Yixin88/wordSmith"); 
+
+
+
+//setting smooth scrolling on project section                
+const navHeight = document.querySelector(".big-nav").offsetHeight;
+document.documentElement.style.setProperty('--scroll-padding', navHeight + 20 + "px")
