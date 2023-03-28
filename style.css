@@ -261,6 +261,7 @@ footer {
     border: solid white;
     width: 50%;
     font: inherit;
+    transition: all .3s ease-in-out;
 }
 
 .contactForm > input:hover, .contactForm > textarea:hover {
