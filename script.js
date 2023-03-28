@@ -5,11 +5,13 @@ const newProjectCard = (projectTitle, imageName, description, projectLink, codeL
     container.innerHTML = `<div class="image_container">
                                 <img src="./assets/projects_screenshot/${imageName}.png" alt="Project Photo">
                            </div>
-                           <h3>${projectTitle}</h3>
-                           <p class="description">${description}</p>
-                           <div class="project_btns">
-                                <a target="_blank" href="${projectLink}"><button class="view_btn">View project</button></a>
-                                <a target="_blank" href="${codeLink}"><button class="view_btn">Source Code</button></a>
+                           <div class="card_container_bottom">
+                                <h3>${projectTitle}</h3>
+                                <p class="description">${description}</p>
+                                <div class="project_btns">
+                                     <a target="_blank" href="${projectLink}"><button class="view_btn">View project</button></a>
+                                     <a target="_blank" href="${codeLink}"><button class="view_btn">Source Code</button></a>
+                                </div>
                            </div>`;
     projectContainer.appendChild(container);
 }

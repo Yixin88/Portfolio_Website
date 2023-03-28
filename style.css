@@ -75,8 +75,17 @@ p {
     color: black;
 }
 
-.header_nav ul a:hover {
-    border-bottom: solid black;
+.header_nav ul li:nth-child(-n + 2)::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.header_nav ul li:nth-child(-n + 2):hover::after {
+    width: 100%;
 }
 
 .name {
@@ -175,21 +184,27 @@ footer {
     transition: all .1s ease-in;
     right: 0;
     bottom: 0;
-    border-radius: 20px;
+    border-radius: 22px;
     animation: fadein 3s;
+    border: #EFECEB solid transparent;
+}
+
+.card_container_bottom {
+    margin: 0 20px;
 }
 
 .card_container:hover {
     right: 10px;
     bottom: 10px;
     box-shadow: 30px 30px 20px rgba(33,33,33,.2);
+    border: #DDD9D6 solid;
   }
 
 
 .image_container {
     padding-bottom: 0;
     background-color: #DDD9D6;
-    border-radius: 20px 20px 20px 1px;
+    border-radius: 20px 20px 1px 1px;
     display: flex;
     justify-content: center;
 }
