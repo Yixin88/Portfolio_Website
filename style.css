@@ -186,7 +186,7 @@ footer {
     bottom: 0;
     border-radius: 22px;
     animation: fadein 3s;
-    border: #EFECEB solid transparent;
+    border: #EFECEB solid 1px;
 }
 
 .card_container_bottom {
@@ -197,7 +197,7 @@ footer {
     right: 10px;
     bottom: 10px;
     box-shadow: 30px 30px 20px rgba(33,33,33,.2);
-    border: #DDD9D6 solid;
+    border: #DDD9D6 solid 1px;
   }
 
 
