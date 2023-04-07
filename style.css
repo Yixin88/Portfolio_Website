@@ -108,7 +108,7 @@ p {
 
 .name {
     color: hsl(34, 82%, 45%);
-    font-family: Nanum-Gothic-Bold;
+    font-family: Ubuntu-Medium;
 }
 
 .desktop-nav  {
@@ -305,6 +305,7 @@ footer {
     border-radius: 22px;
     animation: fadein 3s;
     border: #EFECEB solid 1px;
+    background-color: #ffffff7b;
 }
 
 .card_container_bottom {
@@ -312,9 +313,8 @@ footer {
 }
 
 .card_container:hover {
-    right: 10px;
-    bottom: 10px;
-    box-shadow: 30px 30px 20px rgba(33,33,33,.2);
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(33,33,33,.8);
     border: #DDD9D6 solid 1px;
   }
 
