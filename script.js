@@ -10,6 +10,7 @@ menu_btn.addEventListener('click', ()=> {
 mobile_nav_btn.forEach(btn => {
      btn.addEventListener('click', () => {
           mobile_btn.classList.remove('is-active');
+          menu_btn.classList.remove('is-active');
      })
 })
 
