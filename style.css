@@ -390,8 +390,7 @@ footer {
     font-size: 0.8rem;
     border-radius: 5px;
     color: white;
-    height: 30px;
-    width: 100px;
+    padding: 10px 10px;
     transition: all .2s ease-in-out;
 }
 
