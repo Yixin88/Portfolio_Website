@@ -62,7 +62,7 @@ header {
     top: 0px;
     background-color: #EFECEB;
     margin: 0;
-    padding: 10px 70px;
+    padding: 30px 70px;
     z-index: 10;
 }
 
@@ -88,12 +88,12 @@ p {
 }
 
 .header_nav a {
-    font-family: Ubuntu-Regular;
+    font-family: Ubuntu-Medium;
     text-decoration: none;
     color: black;
 }
 
-.header_nav ul li:nth-child(-n + 2)::after {
+.desktop-nav a:nth-child(-n + 2)::after {
     content: '';
     display: block;
     width: 0;
@@ -102,13 +102,20 @@ p {
     transition: width .3s;
 }
 
-.header_nav ul li:nth-child(-n + 2):hover::after {
+.desktop-nav a:nth-child(-n + 2):hover::after {
     width: 100%;
 }
 
 .name {
     color: hsl(34, 82%, 45%);
     font-family: Nanum-Gothic-Bold;
+}
+
+.desktop-nav  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 #contact_btn, #sendBtn, .returnBtn {
@@ -140,11 +147,12 @@ p {
 .hamburger .bar, .hamburger::after, .hamburger::before {
     content: '';
     display: block;
-    width: 100%;
+    width: 30px;
     height: 5px;
     background-color: black;
     margin: 6px 0px;
     transition: 0.4s;
+    border-radius: 20px;
 }
 
 .hamburger.is-active::before {
@@ -163,13 +171,18 @@ p {
     display: block;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 100%;
     width: 100%;
     min-height: 100vh;
     z-index: 9;
     background-color:rgba(238, 236, 235, 0.5);
     backdrop-filter: blur(30px);
     padding-top: 120px;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0;
 }
 
 .mobile-nav a {
@@ -188,6 +201,31 @@ p {
 
 .mobile-nav a:hover {
     color: hsl(34, 82%, 45%);
+}
+
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    
+    
+}
+
+@media (max-width: 768px) {
+    .desktop-nav a {
+        display: none;
+    }
+
+}
+
+@media (max-width: 350px) {
+    header {
+        padding: 30px 20px;
+    }
 }
 
 .banner {
