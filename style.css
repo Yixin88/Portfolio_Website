@@ -80,6 +80,13 @@ p {
     align-items: center;
 }
 
+.profileInfo {
+    max-width: 1500px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .header_nav ul {
     display: flex;
     gap: 4rem;
@@ -217,7 +224,18 @@ p {
 }
 
 .banner_subheading {
-    grid-area: subheading;
+    margin: 50px 50px 50px 50px;
+}
+
+.banner_subheading > h2 {
+    font-family: Ubuntu-Medium;
+    margin-bottom: 0px;
+    color: hsl(34, 82%, 45%);
+}
+
+.banner_subheading > p {
+    font-family: Ubuntu-Regular;
+    margin-top: 5px;
 }
 
 @keyframes morph {
@@ -316,6 +334,14 @@ footer {
     margin-top: 10px;
 }
 
+.project h3, .final_heading, footer {
+    font-family: Ubuntu-Medium;
+}
+
+.project p, .final_subheading {
+    font-family: Ubuntu-Light;
+}
+
 .card_container {
     position: relative;
     transition: all .1s ease-in;
@@ -356,16 +382,16 @@ footer {
     background-color: hsl(186, 74%, 41%);
     border: 1px solid hsl(186, 74%, 41%);
     font-size: 0.8rem;
-    border-radius: 15px;
+    border-radius: 5px;
     color: white;
     height: 30px;
     width: 100px;
+    transition: all .2s ease-in-out;
 }
 
 .view_btn:hover {
     background-color: hsl(34, 82%, 45%);
     border: 1px solid hsl(34, 82%, 45%);
-    transition: all .2s ease-in;
     cursor: pointer;
 }
 
@@ -374,7 +400,7 @@ footer {
     justify-content: flex-start;
     gap: 20px;
     position: relative;
-    bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .description {
@@ -511,6 +537,7 @@ footer {
         display: flex;
         justify-content: center;
     }
+
 }
 
 @media (max-width: 500px) {
