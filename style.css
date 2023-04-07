@@ -149,7 +149,7 @@ p {
     display: block;
     width: 30px;
     height: 5px;
-    background-color: black;
+    background-color: hsl(34, 82%, 45%);
     margin: 6px 0px;
     transition: 0.4s;
     border-radius: 20px;

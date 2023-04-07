@@ -1,18 +1,17 @@
 const menu_btn = document.querySelector('.hamburger');
 const mobile_btn = document.querySelector('.mobile-nav');
+const mobile_nav_btn = document.querySelectorAll('.mobile-nav-btn');
 
 menu_btn.addEventListener('click', ()=> {
      menu_btn.classList.toggle('is-active');
      mobile_btn.classList.toggle('is-active');
 })
 
-
-
-
-
-
-
-
+mobile_nav_btn.forEach(btn => {
+     btn.addEventListener('click', () => {
+          mobile_btn.classList.remove('is-active');
+     })
+})
 
 
 const newProjectCard = (projectTitle, imageName, description, projectLink, codeLink) => {

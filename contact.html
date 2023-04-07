@@ -8,18 +8,26 @@
     <title>Contact Me</title>
 </head>
 <body>
-    <header>
+    <header class="big-nav">
         <nav class="header_nav">
             <div>
                 <a href="./index.html"><span class="name">Yixin Zhang</span></a>
             </div>
-            <ul>
-                <li><a href="./index.html#profileInfo">About</a></li>
-                <li><a href="./index.html#project">Project</a></li>
-                <li><a href="./contact.html" id="contact_btn">Contact</a></li>
-            </ul>
+            <div class="desktop-nav">
+                <a href="./index.html#profileInfo">About</a>
+                <a href="./index.html#project">Project</a>
+                <a href="./contact.html" id="contact_btn">Contact</a>
+            </div>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
         </nav>
     </header>
+    <nav class="mobile-nav">
+        <a href="./index.html#profileInfo">About</a>
+        <a href="./index.html#project">Project</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
     <main class="contactMainContainer">
         <div class="contactLinkContainer">
             <div class="contactLinkWrapper">
@@ -59,6 +67,13 @@
     <script>
         const year = new Date().getFullYear()
         document.getElementById('year').innerText = year;
+        const menu_btn = document.querySelector('.hamburger');
+        const mobile_btn = document.querySelector('.mobile-nav');
+
+        menu_btn.addEventListener('click', ()=> {
+            menu_btn.classList.toggle('is-active');
+            mobile_btn.classList.toggle('is-active');
+        })
     </script>
     
 </body>
