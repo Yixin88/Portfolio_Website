@@ -8,6 +8,26 @@
     src: url(./fonts/NanumGothic-Bold.ttf);
 }
 
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url(./fonts/Ubuntu-Light.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu-Medium;
+    src: url(./fonts/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url(./fonts/NanumGothic-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url(./fonts/Ubuntu-Bold.ttf);
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: var(--scroll-padding);
@@ -15,14 +35,13 @@ html {
 
 body {
     background-color: #EFECEB;
-    font-family: Nanum-Gothic;
     margin: 0;
     padding: 0;
 }
 
 body main {
     background-color: #EFECEB;
-    font-family: Nanum-Gothic;
+    /* font-family: Ubuntu-Medium; */
     margin: 0;
     padding: 0;
 }
@@ -69,8 +88,7 @@ p {
 }
 
 .header_nav a {
-    font-family: Nanum-Gothic;
-    font-weight: bold;
+    font-family: Ubuntu-Regular;
     text-decoration: none;
     color: black;
 }
@@ -96,8 +114,6 @@ p {
 #contact_btn, #sendBtn, .returnBtn {
     background-color: hsl(34, 82%, 45%);
     border: solid hsl(34, 82%, 45%);
-    font-family: inherit;
-    font-size: inherit;
     border-radius: 15px;
     color: white;
     padding: 10px 15px;
@@ -108,6 +124,70 @@ p {
     transition: 200ms ease-in-out;
     background-color: hsl(34, 79%, 51%);
     border: solid hsl(34, 79%, 51%);
+}
+
+.hamburger {
+    display: block;
+    width: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active::after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 9;
+    background-color:rgba(238, 236, 235, 0.5);
+    backdrop-filter: blur(30px);
+    padding-top: 120px;
+}
+
+.mobile-nav a {
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    font-family: Ubuntu-Medium;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 200ms ease-in-out;
+    max-width: 200px;
+    margin: 60px auto;
+    font-size: 32px;
+}
+
+.mobile-nav a:hover {
+    color: hsl(34, 82%, 45%);
 }
 
 .banner {
@@ -218,7 +298,6 @@ footer {
 .view_btn {
     background-color: hsl(186, 74%, 41%);
     border: 1px solid hsl(186, 74%, 41%);
-    font-family: inherit;
     font-size: 0.8rem;
     border-radius: 15px;
     color: white;
@@ -260,7 +339,6 @@ footer {
     padding: 15px;
     border: solid white;
     width: 50%;
-    font: inherit;
     transition: all .3s ease-in-out;
 }
 

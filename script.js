@@ -1,3 +1,18 @@
+const menu_btn = document.querySelector('.hamburger');
+
+menu_btn.addEventListener('click', ()=> {
+     menu_btn.classList.toggle('is-active')
+})
+
+
+
+
+
+
+
+
+
+
 const newProjectCard = (projectTitle, imageName, description, projectLink, codeLink) => {
     const projectContainer = document.querySelector(".project");
     const container = document.createElement("div");
