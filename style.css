@@ -597,6 +597,37 @@ footer {
     align-self: center;
 }
 
+.to-top {
+    background-color: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    transition: all .4s;
+    z-index: 10;
+}
+
+.to-top:hover {
+    transform: scale(1.1);
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
 /* ----------------------------------- Media Query ------------------------------ */
 @media (min-width: 768px) {
     .mobile-nav {

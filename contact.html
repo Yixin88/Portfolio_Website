@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/a388be2306.js" crossorigin="anonymous" defer></script>
     <title>Contact Me</title>
 </head>
 <body>
@@ -54,6 +55,9 @@
             <button id="sendBtn" type="submit">Send</button>
        </form>
     </main>
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
     <footer>
         <span class="copyright">© <span id="year"></span> Yixin Zhang. All rights reserved</span>
         <div class="footer_icon_container">
@@ -72,6 +76,16 @@
         menu_btn.addEventListener('click', ()=> {
             menu_btn.classList.toggle('is-active');
             mobile_btn.classList.toggle('is-active');
+        })
+
+        const toTop = document.querySelector('.to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 100) {
+                toTop.classList.add("active");
+            } else {
+                toTop.classList.remove("active");
+            }
         })
     </script>
     
