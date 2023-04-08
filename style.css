@@ -117,6 +117,7 @@ p {
 .name {
     color: hsl(34, 82%, 45%);
     font-family: Ubuntu-Medium;
+    display: inline-block;
 }
 
 .desktop-nav  {
