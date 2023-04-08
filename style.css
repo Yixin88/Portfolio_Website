@@ -391,6 +391,7 @@ footer {
     animation: fadein 3s;
     border: #EFECEB solid 1px;
     background-color: #ffffff7b;
+    transition: all 0.3s ease-in-out;
 }
 
 .card_container_bottom {

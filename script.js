@@ -20,7 +20,7 @@ const newProjectCard = (projectTitle, imageName, description, projectLink, codeL
     const container = document.createElement("div");
     container.classList.add("card_container");
     container.innerHTML = `<div class="image_container">
-                                <img src="./assets/projects_screenshot/${imageName}.png" alt="Project Photo">
+                                <img class='project_card_img' src="./assets/projects_screenshot/${imageName}.png" alt="Project Photo">
                            </div>
                            <div class="card_container_bottom">
                                 <h3>${projectTitle}</h3>
