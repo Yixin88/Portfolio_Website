@@ -211,6 +211,40 @@ p {
     color: hsl(34, 82%, 45%);
 }
 
+.skills, .skills > ul {
+    display: flex;
+    list-style-type: none;
+    font-family: Ubuntu-Medium;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills {
+    flex-direction: column;
+}
+
+.skills_logo {
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.skills_logo li {
+    display: flex;
+    width: 5.5rem;
+    height: 5.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+}
+.skills_logo img {
+    width: 3rem;
+    height: auto;
+}
+
 
 .banner {
     align-items: center;
