@@ -212,7 +212,7 @@ p {
     color: hsl(34, 82%, 45%);
 }
 
-.skills, .skills > ul {
+.skills, .skills > ul{
     display: flex;
     list-style-type: none;
     font-family: Ubuntu-Medium;
@@ -224,13 +224,13 @@ p {
     flex-direction: column;
 }
 
-.skills_logo {
+.skills_logo{
     gap: 2.5rem;
     flex-wrap: wrap;
     padding: 0 20px;
 }
 
-.skills_logo li {
+.skills_logo li{
     display: flex;
     width: 5.5rem;
     height: 5.5rem;
@@ -246,6 +246,56 @@ p {
     height: auto;
 }
 
+.contact_logo_container {
+    font-family: Ubuntu-Medium;
+}
+
+.contact_logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    padding: 0 30px 50px 30px;
+    gap: 5rem;
+}
+
+.contact_logo .contact_logo_i {
+    display: flex;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_logo i {
+    font-size: 2rem;
+}
+
+.contact_logo_sub {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact_info_detail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact_info_detail h3, .contact_info_detail p {
+    margin: 0;
+}
+
+.contactEmail {
+    text-decoration: none;
+    color: rgb(147,145,144);
+}
 
 .banner {
     align-items: center;
@@ -593,6 +643,24 @@ footer {
         justify-self: center;
     }
 
+}
+
+@media (max-width: 717px) {
+    .contact_logo_sub {
+        flex-direction: column;
+        align-self: center;
+        gap: 1rem;
+    }
+
+    .contact_logo {
+        flex-direction: column;
+        align-self: center;
+        gap: 3rem;
+    }
+
+    .contact_info_detail {
+        align-items: center;
+    }
 }
 
 @media (max-width: 500px) {
