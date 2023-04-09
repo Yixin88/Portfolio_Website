@@ -67,29 +67,29 @@ newProjectCard("Currency Exchange",
                 "https://yixin88.github.io/Currency-Exchange-App/", 
                 "https://github.com/Yixin88/Currency-Exchange-App");
 
-newProjectCard("Calculator", 
-                "calculator", 
-                "A simple calculator project. First ever project build using javascript, core understanding of the logic and DOM manipulation.", 
-                "https://yixin88.github.io/Calculator/", 
-                "https://github.com/Yixin88/Calculator");
+// newProjectCard("Calculator", 
+//                 "calculator", 
+//                 "A simple calculator project. First ever project build using javascript, core understanding of the logic and DOM manipulation.", 
+//                 "https://yixin88.github.io/Calculator/", 
+//                 "https://github.com/Yixin88/Calculator");
 
-newProjectCard("Sign Up Form", 
-                "sign_up_form", 
-                "First solo form project, part of The Odin Project curriculum, with the use of form validation and password matching validation.", 
-                "https://yixin88.github.io/Sign-up-Form/", 
-                "https://github.com/Yixin88/Sign-up-Form"); 
+// newProjectCard("Sign Up Form", 
+//                 "sign_up_form", 
+//                 "First solo form project, part of The Odin Project curriculum, with the use of form validation and password matching validation.", 
+//                 "https://yixin88.github.io/Sign-up-Form/", 
+//                 "https://github.com/Yixin88/Sign-up-Form"); 
 
-newProjectCard("Cat Adoption Website", 
-                "first_website", 
-                "First website project, designing a dynamic website for cat adoption center, with key learning in site structuring and element position.", 
-                "https://yixin88.github.io/First_website/", 
-                "https://github.com/Yixin88/First_website"); 
+// newProjectCard("Cat Adoption Website", 
+//                 "first_website", 
+//                 "First website project, designing a dynamic website for cat adoption center, with key learning in site structuring and element position.", 
+//                 "https://yixin88.github.io/First_website/", 
+//                 "https://github.com/Yixin88/First_website"); 
 
-newProjectCard("Word Smith", 
-                "word_smith", 
-                "A simple application which allows tranforming the input text/paragraph to a different style, e.g. Bold, Underline, Italic, Colour Change.", 
-                "https://yixin88.github.io/wordSmith/", 
-                "https://github.com/Yixin88/wordSmith"); 
+// newProjectCard("Word Smith", 
+//                 "word_smith", 
+//                 "A simple application which allows tranforming the input text/paragraph to a different style, e.g. Bold, Underline, Italic, Colour Change.", 
+//                 "https://yixin88.github.io/wordSmith/", 
+//                 "https://github.com/Yixin88/wordSmith"); 
 
 
 
