@@ -43,9 +43,15 @@ const newProjectCard = (projectTitle, imageName, description, projectLink, codeL
     projectContainer.appendChild(container);
 }
 
+newProjectCard("Amazon React Store", 
+                "react-store", 
+                "Online E-Commerce SPA store build using React, mimicing certain element from Amazon. From full inventory fetching via API to full URL routing with dedicated web pages", 
+                "https://amazonreactspa.netlify.app/", 
+                "https://github.com/Yixin88/react_store");
+
 newProjectCard("Online Ecommerce Store", 
                 "online-shop", 
-                "A full mock up online E-Commerce store build using JS, mimicing certain element from Amazon. From Sign-in page to full inventory fetching by category/search via mockup API", 
+                "A full mock up online E-Commerce store build using Vanilla JS, mimicing certain element from Amazon. From Sign-in page to full inventory fetching by category/search via mockup API", 
                 "https://yixin88.github.io/E-Commerce_Store/", 
                 "https://github.com/Yixin88/E-Commerce_Store");
 
@@ -55,11 +61,11 @@ newProjectCard("The Bean Machine",
                 "https://yixin88.github.io/Landing-page-coffee-/", 
                 "https://github.com/Yixin88/Landing-page-coffee-");
 
-newProjectCard("Ski Adventure Form", 
-                "ski_form", 
-                "Sign-up form for a Ski resort, with the use of input validation (e.g. Empty/invalid/improper format field) and use of all common input types.", 
-                "https://yixin88.github.io/Ski-Adventure-Form/", 
-                "https://github.com/Yixin88/Ski-Adventure-Form");
+// newProjectCard("Ski Adventure Form", 
+//                 "ski_form", 
+//                 "Sign-up form for a Ski resort, with the use of input validation (e.g. Empty/invalid/improper format field) and use of all common input types.", 
+//                 "https://yixin88.github.io/Ski-Adventure-Form/", 
+//                 "https://github.com/Yixin88/Ski-Adventure-Form");
 
 newProjectCard("Currency Exchange", 
                 "currency", 
