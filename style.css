@@ -240,7 +240,45 @@ p {
     background-color: #fff;
     text-decoration: none;
     box-shadow: 0 0 10px rgba(0,0,0,.09);
+    transition: transform .3s ease-in-out;
+    /* z-index: 3; */
 }
+
+.skills_logo li:hover {
+    transform: scale(1.1);
+}
+
+.skills1::after {
+    content: 'HTML';
+}
+.skills2::after {
+    content: 'CSS';
+}
+.skills3::after {
+    content: 'JavaScript';
+}
+.skills4::after {
+    content: 'React';
+}
+.skills5::after {
+    content: 'TailWind';
+}
+.skills6::after {
+    content: 'SASS/SCSS';
+}
+
+.skillsIcon::after {
+    position: absolute;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.skills_logo li:hover::after {
+    opacity: 1;
+    transform: translateY(57px);
+}
+
 .skills_logo img {
     width: 3rem;
     height: auto;
@@ -414,6 +452,11 @@ footer {
 .footer_icon2 {
     width: 50px;
     margin: 0 20px;
+    transition: all .3s ease-in-out;
+}
+
+.footer_icon2:hover {
+    transform: scale(1.1);
 }
 
 .project {
