@@ -20,7 +20,7 @@
 
 @font-face {
     font-family: Ubuntu-Regular;
-    src: url(./fonts/NanumGothic-Regular.ttf);
+    src: url(./fonts/Ubuntu-Regular.ttf);
 }
 
 @font-face {
@@ -345,6 +345,12 @@ p {
 .banner_heading {
     grid-area: heading;
     font-size: 64px;
+    font-family: Ubuntu-Medium;
+    line-height: 120%;
+}
+
+.banner_heading > span {
+    font-family: Ubuntu-Medium;
 }
 
 .banner_subheading {
