@@ -118,6 +118,11 @@ p {
     color: hsl(34, 82%, 45%);
     font-family: Ubuntu-Medium;
     display: inline-block;
+    transition: .2s ease-in-out;
+}
+
+.name:hover {
+    filter: brightness(120%);
 }
 
 .desktop-nav  {
@@ -135,10 +140,10 @@ p {
     padding: 10px 15px;
     cursor: pointer;
     font-family: Ubuntu-Medium;
+    transition: 200ms ease-in-out;
 }
 
 #contact_btn:hover, #sendBtn:hover, .returnBtn:hover {
-    transition: 200ms ease-in-out;
     background-color: hsl(34, 79%, 51%);
     border: solid hsl(34, 79%, 51%);
 }
@@ -318,6 +323,11 @@ p {
     gap: 1.5rem;
     flex-wrap: wrap;
     align-items: center;
+    transition: .3s ease-in-out;
+}
+
+.contact_logo_sub:hover {
+    transform: scale(105%);
 }
 
 .contact_info_detail {
@@ -347,6 +357,7 @@ p {
     font-size: 64px;
     font-family: Ubuntu-Medium;
     line-height: 120%;
+    letter-spacing: -1px;
 }
 
 .banner_heading > span {
