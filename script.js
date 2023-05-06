@@ -43,9 +43,15 @@ const newProjectCard = (projectTitle, imageName, description, projectLink, codeL
     projectContainer.appendChild(container);
 }
 
+newProjectCard("Car Rental", 
+                "car-rental", 
+                "Professional Car Rental SPA site is an online platform which allows customers to pick a car to rent within UK. With fluid interface for searching, comparing and reserving their favorite car!", 
+                "https://car-rental-now.netlify.app/", 
+                "https://github.com/Yixin88/car-rental");
+
 newProjectCard("Amazon React Store", 
                 "react-store", 
-                "Online E-Commerce SPA store build using React, mimicing certain element from Amazon. From full inventory fetching via API to full URL routing with dedicated web pages", 
+                "Online E-Commerce SPA store build using React, mimicking certain element from Amazon. From full inventory fetching via API to full URL routing with dedicated web pages", 
                 "https://amazonreactspa.netlify.app/", 
                 "https://github.com/Yixin88/react_store");
 
@@ -55,11 +61,11 @@ newProjectCard("Online Ecommerce Store",
                 "https://yixin88.github.io/E-Commerce_Store/", 
                 "https://github.com/Yixin88/E-Commerce_Store");
 
-newProjectCard("The Bean Machine", 
-                "coffee_landing_page", 
-                "Coffee shop landing page including selction page, with the use of both flexbox and grid. Also animations and pseudo classes.", 
-                "https://yixin88.github.io/Landing-page-coffee-/", 
-                "https://github.com/Yixin88/Landing-page-coffee-");
+// newProjectCard("The Bean Machine", 
+//                 "coffee_landing_page", 
+//                 "Coffee shop landing page including selction page, with the use of both flexbox and grid. Also animations and pseudo classes.", 
+//                 "https://yixin88.github.io/Landing-page-coffee-/", 
+//                 "https://github.com/Yixin88/Landing-page-coffee-");
 
 // newProjectCard("Ski Adventure Form", 
 //                 "ski_form", 
@@ -69,7 +75,7 @@ newProjectCard("The Bean Machine",
 
 newProjectCard("Currency Exchange", 
                 "currency", 
-                "A web application that fetch latest currency exchange rate via API depending on the 2 currency you wish to exchange between.", 
+                "A web application that fetch latest currency exchange rate via live API depending on the 2 currency you wish to exchange between. Simply enter the currency shorthand within the field and get converting!", 
                 "https://yixin88.github.io/Currency-Exchange-App/", 
                 "https://github.com/Yixin88/Currency-Exchange-App");
 
