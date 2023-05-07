@@ -737,6 +737,22 @@ footer {
 }
 
 @media (max-width: 717px) {
+    .banner_heading {
+        font-family: Poppins,sans-serif;
+    }
+
+    .banner_heading > span {
+        font-family: Poppins,sans-serif;
+    }
+
+    .skills > h3 {
+        font-family: Poppins,sans-serif;
+    }
+
+    .banner_subheading > h2 {
+        font-family: Poppins,sans-serif;
+    }
+
     .contact_logo_sub {
         flex-direction: column;
         align-self: center;
