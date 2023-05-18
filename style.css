@@ -692,7 +692,7 @@ footer {
 }
 
 .to-top.active {
-    bottom: 32px;
+    bottom: 70px;
     pointer-events: auto;
     opacity: 1;
 }
