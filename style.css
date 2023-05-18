@@ -271,6 +271,15 @@ p {
 .skills6::after {
     content: 'SASS/SCSS';
 }
+.skills7::after {
+    content: 'Jest';
+}
+.skills8::after {
+    content: 'SQL';
+}
+.skills9::after {
+    content: 'Git';
+}
 
 .skillsIcon::after {
     position: absolute;
