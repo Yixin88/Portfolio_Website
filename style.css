@@ -712,9 +712,10 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: relative;
 }
 
-.aboutMeInfo-imageContainer img {
+.aboutMeInfo-imageContainer > img {
     width: 100%;
     border-radius: 1rem;
     
@@ -745,6 +746,41 @@ footer {
     font-size: 1.1rem;
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotatingImg {
+    position: absolute;
+    right: -15px;
+    bottom: -50px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(./assets/typing.gif);
+    background-position: center;
+    background-size: 7rem;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+}
+
+.rotatingImg > img {
+    animation: rotate 9s linear infinite;
+    max-width: 10rem;
+}
+
+
+
+
 /* ----------------------------------- Media Query ------------------------------ */
 @media (min-width: 768px) {
     .mobile-nav {
@@ -758,6 +794,13 @@ footer {
     
 }
 
+@media screen and (max-width: 1200px) {
+    .rotatingImg {
+        bottom: 0;
+    }
+
+}
+
 @media screen and (max-width: 1024px) {
     .aboutMeInfo {
         flex-direction: column;
@@ -765,6 +808,11 @@ footer {
     }
     .aboutMeInfo-imageContainer {
         max-width: fit-content;
+    }
+
+    .rotatingImg {
+        bottom: -50px;
+        right: -15px;
     }
 
 }
@@ -862,6 +910,10 @@ footer {
 
     .final_heading {
         font-size: 19px;
+    }
+
+    .rotatingImg {
+        display: none;
     }
 
 }
