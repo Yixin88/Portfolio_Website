@@ -744,6 +744,7 @@ footer {
     font-family: Ubuntu-Regular;
     margin: 0;
     font-size: 1.1rem;
+    line-height: 150%;
 }
 
 @keyframes rotate {
