@@ -855,13 +855,15 @@ footer {
         justify-self: center;
     }
 
+}
+
+@media (hover: none) and (pointer: coarse) {
     .skillsIcon::after {
         position: absolute;
         transform: translateY(60px);
         opacity: 1;
         transition: all .3s ease-in-out;
     }
-
 }
 
 @media (max-width: 717px) {
