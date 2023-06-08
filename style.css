@@ -266,16 +266,16 @@ p {
     content: 'React';
 }
 .skills5::after {
-    content: 'TailWind';
+    content: 'Next.js';
 }
 .skills6::after {
-    content: 'SASS/SCSS';
+    content: 'TailWind';
 }
 .skills7::after {
-    content: 'Jest';
+    content: 'SASS/SCSS';
 }
 .skills8::after {
-    content: 'SQL';
+    content: 'Jest';
 }
 .skills9::after {
     content: 'Git';
