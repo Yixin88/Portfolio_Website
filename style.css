@@ -65,6 +65,11 @@ header {
     margin: 0;
     padding: 20px 70px;
     z-index: 10;
+    transition: .3s ease-in-out;
+}
+
+header.shadow {
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
 h2 {

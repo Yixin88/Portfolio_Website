@@ -15,12 +15,27 @@ mobile_nav_btn.forEach(btn => {
 })
 
 const toTop = document.querySelector('.to-top');
+const header = document.querySelector('header');
+const mobileNav = document.querySelector('.mobile-nav');
+
+menu_btn.addEventListener('click', ()=> {
+     if (!mobileNav.classList.contains('is-active')) {
+          header.classList.add("shadow");
+     } else {
+          header.classList.remove("shadow");
+     }
+})
 
 window.addEventListener('scroll', () => {
      if (window.pageYOffset > 100) {
           toTop.classList.add("active");
      } else {
           toTop.classList.remove("active");
+     }
+     if (window.pageYOffset > 60 && !mobileNav.classList.contains('is-active')) {
+          header.classList.add("shadow");
+     } else {
+          header.classList.remove("shadow");
      }
 })
 
