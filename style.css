@@ -106,7 +106,7 @@ p {
     color: black;
 }
 
-.desktop-nav a:nth-child(-n + 2)::after {
+.desktop-nav a:nth-child(-n + 3)::after {
     content: '';
     display: block;
     width: 0;
@@ -115,7 +115,7 @@ p {
     transition: width .3s;
 }
 
-.desktop-nav a:nth-child(-n + 2):hover::after {
+.desktop-nav a:nth-child(-n + 3):hover::after {
     width: 100%;
 }
 
