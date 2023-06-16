@@ -1,6 +1,22 @@
+// import { MongoClient } from "mongodb";
+
 const menu_btn = document.querySelector('.hamburger');
 const mobile_btn = document.querySelector('.mobile-nav');
 const mobile_nav_btn = document.querySelectorAll('.mobile-nav-btn');
+
+// async function pushViewerData() {
+//      console.log('Done');
+//      let date = new Date();
+//      // let today = date.toLocaleDateString();
+//      // let time = date.toDateString() + " at " +date.getHours() + ":" + date.getMinutes();
+//      // const client = await MongoClient.connect('mongodb+srv://ying:ying@cluster0.andzl1u.mongodb.net/portfolio?retryWrites=true&w=majority');
+//      // const db = client.db();
+//      // const result = await db.collection(today).insertOne({date: time});
+// }
+
+// document.addEventListener("DOMContentLoaded", async function() {
+//      pushViewerData();
+// });
 
 menu_btn.addEventListener('click', ()=> {
      menu_btn.classList.toggle('is-active');
@@ -40,10 +56,27 @@ window.addEventListener('scroll', () => {
 })
 
 
-const newProjectCard = (projectTitle, imageName, description, projectLink, codeLink) => {
+const newProjectCard = (projectTitle, imageName, description, projectLink, codeLink, soon = false) => {
     const projectContainer = document.querySelector(".project");
     const container = document.createElement("div");
     container.classList.add("card_container");
+
+    if (soon) {
+          container.innerHTML = `<div class="image_container">
+                                   <img class='project_card_img' src="./assets/projects_screenshot/${imageName}.png" alt="Project Photo">
+                              </div>
+                              <div class="card_container_bottom">
+                                   <h3>${projectTitle}</h3>
+                                   <p class="description">${description}</p>
+                                   <div class="project_btns">
+                                        <a href="#" onclick="return false;"><button class="view_btn">Coming Soon!</button></a>
+                                        <a target="_blank" href="${codeLink}"><button class="view_btn">Source Code</button></a>
+                                   </div>
+                              </div>`;
+          projectContainer.appendChild(container);
+          return;
+    }
+
     container.innerHTML = `<div class="image_container">
                                 <img class='project_card_img' src="./assets/projects_screenshot/${imageName}.png" alt="Project Photo">
                            </div>
@@ -88,11 +121,18 @@ newProjectCard("Online Ecommerce Store",
 //                 "https://yixin88.github.io/Ski-Adventure-Form/", 
 //                 "https://github.com/Yixin88/Ski-Adventure-Form");
 
-newProjectCard("Currency Exchange", 
-                "currency", 
-                "A web application that fetch latest currency exchange rate via live API depending on the 2 currency you wish to exchange between. Simply enter the currency shorthand within the field and get converting!", 
-                "https://yixin88.github.io/Currency-Exchange-App/", 
-                "https://github.com/Yixin88/Currency-Exchange-App");
+// newProjectCard("Currency Exchange", 
+//                 "currency", 
+//                 "A web application that fetch latest currency exchange rate via live API depending on the 2 currency you wish to exchange between. Simply enter the currency shorthand within the field and get converting!", 
+//                 "https://yixin88.github.io/Currency-Exchange-App/", 
+//                 "https://github.com/Yixin88/Currency-Exchange-App");
+
+newProjectCard("Web Development Blog (COMING SOON)", 
+                "my-blog", 
+                "A blog to keep up with trend in the world of web development, from the latest framework changes/update to news and tips! Build using Next.js and MongoDB", 
+                "#", 
+                "https://github.com/Yixin88/My-Blog",
+                true);
 
 // newProjectCard("Calculator", 
 //                 "calculator", 
