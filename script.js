@@ -69,7 +69,7 @@ const newProjectCard = (projectTitle, imageName, description, projectLink, codeL
                                    <h3>${projectTitle}</h3>
                                    <p class="description">${description}</p>
                                    <div class="project_btns">
-                                        <a href="#" onclick="return false;"><button class="view_btn">Coming Soon!</button></a>
+                                        <a href="#" onclick="return false;" class="wrapper"><button class="view_btn coming-soon_btn">Coming Soon!</button></a>
                                         <a target="_blank" href="${codeLink}"><button class="view_btn">Source Code</button></a>
                                    </div>
                               </div>`;
