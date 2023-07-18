@@ -97,6 +97,13 @@ newProjectCard("Car Rental",
                 "https://car-rental-now.netlify.app/", 
                 "https://github.com/Yixin88/car-rental");
 
+newProjectCard("Google Shopping", 
+               "google-shopping", 
+               "A Google Shopping website which allows users to browse all their favorite product which been live scalped across all online store/ecommerce site, with live prices, vendor, and many more!", 
+               "#", 
+               "https://github.com/Yixin88/Google-Shopping",
+               true);
+
 newProjectCard("Amazon React Store", 
                 "react-store", 
                 "Online E-Commerce SPA store build using React, mimicking certain element from Amazon. From full inventory fetching via API to full URL routing with dedicated web pages", 
@@ -127,12 +134,12 @@ newProjectCard("Online Ecommerce Store",
 //                 "https://yixin88.github.io/Currency-Exchange-App/", 
 //                 "https://github.com/Yixin88/Currency-Exchange-App");
 
-newProjectCard("Web Development Blog (COMING SOON)", 
-                "my-blog", 
-                "A blog to keep up with trend in the world of web development, from the latest framework changes/update to news and tips! Build using Next.js and MongoDB", 
-                "#", 
-                "https://github.com/Yixin88/My-Blog",
-                true);
+// newProjectCard("Web Development Blog (COMING SOON)", 
+//                 "my-blog", 
+//                 "A blog to keep up with trend in the world of web development, from the latest framework changes/update to news and tips! Build using Next.js and MongoDB", 
+//                 "#", 
+//                 "https://github.com/Yixin88/My-Blog",
+//                 true);
 
 // newProjectCard("Calculator", 
 //                 "calculator", 
