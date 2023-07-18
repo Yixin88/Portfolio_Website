@@ -77,9 +77,9 @@ const newProjectCard = (projectTitle, imageName, description, projectLink, codeL
           return;
     }
 
-    container.innerHTML = `<div class="image_container">
+    container.innerHTML = `<a target="_blank" href="${projectLink}"><div class="image_container">
                                 <img class='project_card_img' src="./assets/projects_screenshot/${imageName}.png" alt="Project Photo">
-                           </div>
+                           </div></a>
                            <div class="card_container_bottom">
                                 <h3>${projectTitle}</h3>
                                 <p class="description">${description}</p>
